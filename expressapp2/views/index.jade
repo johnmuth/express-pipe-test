@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h4 cookies:
+  ul
+    - for(cookie in cookies){
+       li #{cookie}=#{cookies[cookie]}
+    - }
+  h4 headers:
+  ul
+    - for(header in headers){
+       li #{header}=#{headers[header]}
+    - }

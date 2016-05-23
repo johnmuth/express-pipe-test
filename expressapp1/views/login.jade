@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p
+    a(href="#{destination}") Click here to log in!
+  h4 cookies:
+  ul
+    - for(cookie in cookies){
+       li #{cookie}=#{cookies[cookie]}
+    - }
+  h4 headers:
+  ul
+    - for(header in headers){
+       li #{header}=#{headers[header]}
+    - }
